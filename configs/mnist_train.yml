@@ -13,7 +13,7 @@ sampling:
   step_lr: 0.0000062
   n_steps_each: 5
   ckpt_id: 15000
-  final_only: true
+  final_only: false
   fid: false
   denoise: true
   num_samples4fid: 10000

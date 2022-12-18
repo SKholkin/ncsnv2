@@ -1,3 +1,6 @@
+# Implementing training on MNIST
+## Checkpoint [here](https://drive.google.com/file/d/1-Xz8FU3lkDo1EHoC0uv38ZdaFZA0r1oF/view)
+
 # Improved Techniques for Training Score-Based Generative Models
 
 This repo contains the official implementation for the paper [Improved Techniques for Training Score-Based Generative Models](http://arxiv.org/abs/2006.09011). 
