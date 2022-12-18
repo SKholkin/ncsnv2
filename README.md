@@ -1,5 +1,7 @@
 # Implementing training on MNIST
+## Config [here](configs/mnist_train.yml)
 ## Checkpoint [here](https://drive.google.com/file/d/1-Xz8FU3lkDo1EHoC0uv38ZdaFZA0r1oF/view)
+
 
 # Improved Techniques for Training Score-Based Generative Models
 
