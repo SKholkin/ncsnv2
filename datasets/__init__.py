@@ -1,7 +1,7 @@
 import os
 import torch
 import torchvision.transforms as transforms
-from torchvision.datasets import CIFAR10, LSUN
+from torchvision.datasets import CIFAR10, LSUN, MNIST
 from datasets.celeba import CelebA
 from datasets.ffhq import FFHQ
 from torch.utils.data import Subset
@@ -29,6 +29,9 @@ def get_dataset(args, config):
                           transform=tran_transform)
         test_dataset = CIFAR10(os.path.join(args.exp, 'datasets', 'cifar10_test'), train=False, download=True,
                                transform=test_transform)
+    elif config.data.dataset == 'MNIST':
+        dataset = MNIST(os.path.join(args.exp, 'datasets', 'mnist'), train = True,transform = test_transform, download = True)
+        test_dataset = MNIST(os.path.join(args.exp, 'datasets', 'mnist_test'), train = True,transform = test_transform, download = True)
 
     elif config.data.dataset == 'CELEBA':
         if config.data.random_flip:
